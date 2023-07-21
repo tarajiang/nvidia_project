@@ -23,6 +23,6 @@ python3 project.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob
 ```scp <nanousername>@192.168.55.1:/home/<nanousername>/<pathToSyncedProject>/<pathToTestFile C:\Users\<hostusername>\Desktop```
 
 ### Mac:
-```scp <nanousername>@192.168.55.1:/home/<nanousername>/<pathToSyncedProject>/<pathToTestFile ./```
+```scp <nanousername>@192.168.55.1:/home/<nanousername>/<pathToSyncedProject>/<pathToTestFile> ./```
 
 [View a video explanation here](video link)
