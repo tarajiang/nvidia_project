@@ -12,11 +12,17 @@ I based my code on the imagenet code we worked on earlier. The algorithm takes a
   
 1. Sync the github project at https://github.com/tarajiang/nvidia_project/. (You will need to have the jetson inference libraries properly set up.)
 2. Navigagte to the project in your terminal.
-3. In the root of the project there is a python script named project.py. Run the model using the following command. Note that you can change the output filename, and which file you want to test the model with.: 
+3. Set the NET and DATASET variables
+
+```NET=models/book```
+
+```DATASET=data/book-covers```
+
+4. In the root of the project there is a python script named project.py. Run the model using the following command. Note that you can change the output filename, and which file you want to test the model with.: 
 ```bash
 python3 project.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt --output_filename=output.jpg $DATASET/test/Biography/testfile.jpg
 ```
-4. Use SCP to download the output
+5. Use SCP to download the output
 
 ### Windows:
 
