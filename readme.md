@@ -20,7 +20,7 @@ I based my code on the imagenet code we worked on earlier. The algorithm takes a
 
 4. In the root of the project there is a python script named project.py. Run the model using the following command. Note that you can change the output filename, and which file you want to test the model with.: 
 ```bash
-python3 project.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt --output_filename=output.jpg $DATASET/test/Biography/testfile.jpg
+python3 project.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt --output_filename=output2.jpg $DATASET/test/Childrens-Books/0000046.jpg
 ```
 5. Use SCP to download the output
 
@@ -31,4 +31,4 @@ python3 project.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob
 ### Mac:
 ```scp <nanousername>@192.168.55.1:/home/<nanousername>/<pathToSyncedProject>/<pathToTestFile> ./```
 
-[View a video explanation here](video link)
+[[View a video explanation here]](https://youtu.be/Li8Yi6Vmza4))
